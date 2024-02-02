@@ -7,6 +7,7 @@ namespace FileManager
     public enum DirectiryItemType 
     {
         Folder,
-        File
+        File,
+        Disk
     }
 }
