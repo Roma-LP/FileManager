@@ -47,8 +47,7 @@ namespace FileManager
         {
 #if UNITY_EDITOR
             _directoryCurrent = new DirectoryInfo(Application.dataPath);
-#endif
-#if PLATFORM_ANDROID
+#else
             _directoryCurrent = new DirectoryInfo("/storage/emulated/0");
 #endif
             ShowDirectiry(_directoryCurrent);
